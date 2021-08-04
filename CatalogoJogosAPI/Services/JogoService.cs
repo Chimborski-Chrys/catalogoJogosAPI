@@ -103,7 +103,7 @@ namespace CatalogoJogosAPI.Services
 
         public async Task Deletar(Guid id)
         {
-            var jogo = _jogoRepositorio.Obter(id);
+            var jogo = await _jogoRepositorio.Obter(id);
             if(jogo == null)
             {
                 throw new JogoNaoCadastradoException();
