@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-/*
+
 namespace CatalogoJogosAPI.Repositorio
 {
-    public class JogoRepositorio
+    public class JogoRepositorio : IJogoRepositorio
     {
         private static Dictionary<Guid, Jogo> jogos = new Dictionary<Guid, Jogo>()
         {
@@ -80,4 +80,3 @@ namespace CatalogoJogosAPI.Repositorio
     }
 }
 
-*/

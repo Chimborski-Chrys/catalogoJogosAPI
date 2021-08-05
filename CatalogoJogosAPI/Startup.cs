@@ -34,6 +34,7 @@ namespace CatalogoJogosAPI
         {
             services.AddScoped<IJogoService, JogoService>();
             services.AddScoped<IJogoRepositorio, JogoSqlServerRepositorio>();
+           // services.AddScoped<IJogoRepositorio, JogoRepositorio>();
 
             services.AddSingleton<IExemploSingleton, ExemploCicloDeVida>();
             services.AddScoped<IExemploScoped, ExemploCicloDeVida>();
@@ -60,7 +61,7 @@ namespace CatalogoJogosAPI
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CatalogoJogosAPI v1"));
             }
 
-            app.UseMiddleware<ExceptionMiddleware>();
+          //  app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseHttpsRedirection();
 

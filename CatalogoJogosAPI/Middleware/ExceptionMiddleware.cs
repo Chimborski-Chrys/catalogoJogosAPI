@@ -28,6 +28,7 @@ namespace API_CatalogoJogos.Middleware
             }
         }
 
+        
         private static async Task HandleExceptionAsync(HttpContext context)
         {
             context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;

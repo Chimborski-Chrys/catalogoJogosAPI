@@ -15,6 +15,6 @@ namespace CatalogoJogosAPI.Repositorio
         Task InserirJogo(Jogo jogo);
         Task AtualizarJogo(Jogo jogo);
         Task Deletar(Guid id);
-        void Dispose();
+       // void Dispose();
     }
 }
